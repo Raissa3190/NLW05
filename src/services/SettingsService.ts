@@ -30,7 +30,7 @@ class SettingsService{
         const settings = this.settingsRepository.create({
             chat,
             username,
-        })
+        });
 
    await this.settingsRepository.save(settings);
 
@@ -61,4 +61,4 @@ class SettingsService{
 }
 
 
-export { SettingsService }
+export { SettingsService };
